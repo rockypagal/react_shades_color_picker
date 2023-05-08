@@ -1,0 +1,37 @@
+.historyColor__list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 25px;
+  flex-wrap: wrap;
+}
+/* @keyframes collection {
+    0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+} */
+
+.historyColor__collection {
+  border: 3px solid var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 12px 30px rgb(197, 197, 197);
+  /* animation: collection .3s  0 1 normal ; */
+  transition: all ease 0.3s;
+  animation: collection .3s ease 0s 1 alternate;
+
+}
+
+
+.historyColor__collection:hover {
+  transform: scale(1.1);
+}
+.historyColor__card {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+}

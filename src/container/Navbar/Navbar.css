@@ -1,0 +1,90 @@
+.header__border {
+  /* border:1px solid red; */
+  padding-top: 0.7rem;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav img {
+  width: 120px;
+  cursor: pointer;
+}
+
+.header__github {
+  background-color: var(--color-black);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  text-align: center;
+  transition: all ease 0.2s;
+}
+.header__github:hover a,
+.header__github:hover i {
+  color: var(--color-orange);
+  /* transform: scale(1.1); */
+}
+.header__github i {
+  color: var(--color-white);
+  margin-right: 0.3rem;
+  transition: all ease 0.2s;
+}
+.header__github a {
+  color: var(--color-white);
+  transition: all ease 0.2s;
+}
+
+@media screen and (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .header__nav img {
+    width: 80px;
+  }
+
+  .header__github {
+    padding: 0.3rem 0.7rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  /* .header__border {
+
+            padding-top:.3rem;
+    
+        } */
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
